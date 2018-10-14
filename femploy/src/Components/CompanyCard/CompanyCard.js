@@ -49,9 +49,4 @@ function CompanyCard(props) {
   );
 }
 
-CompanyCard.propTypes = {
-  companyName: PropTypes.string.isRequired
-};
-
-
 export default withStyles(styles)(CompanyCard);
