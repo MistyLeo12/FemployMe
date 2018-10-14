@@ -1,3 +1,6 @@
+# Femploy 
+Hack Duke 2018 
+
 ## Inspiration
 There are many job sites that have proven popular and powerful by providing transparency into the jobs and companies. However, for women, there are many important questions that are rarely asked and rarely answered. For example, questions regarding gender pay differences, equality of treatment, and opportunities for women to advance within a company structure. It is imperative that the answers to these questions are transparent to a female job-seeker, and so we sought to provide this transparency through a platform that will allow women to help women navigate the workforce.
 
