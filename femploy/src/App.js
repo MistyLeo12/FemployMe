@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CompanyGrid from './Components/CompanyGrid/CompanyGrid'; 
+import CompanyGrid from './Components/CompanyGrid/CompanyGrid';
 
 import './App.css';
 import myLogo from './myLogo.png';
@@ -38,5 +38,3 @@ class App extends Component {
 }
 
 export default App;
-
-

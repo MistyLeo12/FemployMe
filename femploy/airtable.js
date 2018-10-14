@@ -26,7 +26,7 @@ base('user').select({
     if (err) { console.error(err)} else {
       base('company').select({
           // Selecting the first 3 records in Grid view:
-          maxRecords: 7,
+          maxRecords: 100,
           view: "Grid view"
       }).eachPage(function page(records, fetchNextPage) {
           // This function (`page`) will get called for each page of records.
