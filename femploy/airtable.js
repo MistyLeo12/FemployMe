@@ -2,7 +2,7 @@ var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keyWvlXmSn55006bY'}).base('app7RMaUfSoIVwdde');
 
 base('user').select({
-    // Selecting the first 3 records in Grid view:
+    // Selecting 3 records in Grid view:
     maxRecords: 7,
     view: "Grid view"
 }).eachPage(function page(records, fetchNextPage) {
@@ -11,6 +11,7 @@ base('user').select({
     records.forEach(function(record) {
         console.log(record.get('ID'), record.get('company'), record.get('position'), record.get('salary'), record.get('age') , record.get('equal_treatment'));
     });
+
     // To fetch the next page of records, call `fetchNextPage`.
     // If there are more records, `page` will get called again.
     // If there are no more records, `done` will get called.
@@ -18,17 +19,4 @@ base('user').select({
 
 }, function done(err) {
     if (err) { console.error(err); return; }
-});
-
-
-
-base('user').create({
-  "ID": 1,
-  "company": "Google",
-  "position": "Software Engineer ",
-  "salary": 10,
-  "age": "24"
-}, function(err, record) {
-    if (err) { console.error(err); return; }
-    console.log(record.getId());
 });
