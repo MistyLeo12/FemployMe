@@ -1,3 +1,25 @@
+.myText {
+  text-align: left;
+  padding-left: 78px;
+}
+
+.App-topCompanies {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.App-charts {
+  column-width: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.App-diff {
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+}
+
 .App {
   text-align: center;
 }
@@ -24,11 +46,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-topCompanies {
-  padding-top: 30px;
-  padding-bottom: 20px;
 }
 
 @keyframes App-logo-spin {

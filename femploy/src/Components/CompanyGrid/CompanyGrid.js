@@ -42,16 +42,12 @@ class CompanyGrid extends Component {
 	}
 	*/
 	render() {
-		console.log(this.props);
 		return (
 		<div className="wrapper">
-		<div className = "rows">
-			<div className = "row"> 
-				{console.log(this.props.text)}
-				{this.props.text}
-				{this.state.text}
+		<div className ="rows">
+			<div className ="row"> 
 				{this.state.data.map(thing => {
-					return <CompanyCard key={thing.name} companyName={thing.name} pic={thing.img}/>
+					return <CompanyCard pic={thing.img}/>
 				} )}
 
 			</div>
