@@ -2,13 +2,21 @@
   text-align: center;
 }
 
+.App-cover {
+    width: 100%;
+    height: 100%;
+  }
+
 .App-logo {
+  justify-content: center;
+  /*
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffe396;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,8 +26,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-topCompanies {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,10 @@
+.rows .row {
+	column-width: 200px;
+	justify-content: center;
+	display: flex;
+}
+
+.wrapper {
+	padding-left: 75px;
+	padding-right: 75px;
+}
