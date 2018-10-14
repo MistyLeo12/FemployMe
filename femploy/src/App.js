@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import CompanyGrid from './Components/CompanyGrid/CompanyGrid'; 
 import ChartGrid from './Components/ChartGrid/ChartGrid';
 import Difference from './Components/Difference/Difference';
@@ -68,5 +69,3 @@ class App extends Component {
 }
 
 export default App;
-
-
