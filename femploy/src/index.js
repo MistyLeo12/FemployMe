@@ -7,7 +7,7 @@ import Review from './Components/views/review.js';
 import * as serviceWorker from './serviceWorker';
 
 //import { Router } from 'react-router';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import routes from './routes';
 
 
@@ -22,7 +22,14 @@ import { BrowserRouter, Route } from 'react-router-dom'
 //import { BrowserRouter } from 'react-router-dom'
 ReactDOM.render((
   <BrowserRouter>
-    <App />
+    <div>
+      <Switch>
+        <Route exact path='/' component={App}/>
+        <Route exact path='/company' component={Company}/>
+        <Route path='/review' component={Review}/>
+      </Switch>
+    </div>
+
   </BrowserRouter>
 ), document.getElementById('root'))
 

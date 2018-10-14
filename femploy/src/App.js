@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import CompanyGrid from './Components/CompanyGrid/CompanyGrid'; 
 import ChartGrid from './Components/ChartGrid/ChartGrid';
-import Difference from './Components/Difference/Difference'
+import Difference from './Components/Difference/Difference';
+import ProgressBar from './Components/ProgressBar/ProgressBar';
 
 import './App.css';
 import myLogo from './myLogo.png';
@@ -9,6 +10,8 @@ import myLogo from './myLogo.png';
 import Routes from './routes';
 import Company from './Components/views/company.js';
 import Review from './Components/views/review.js';
+
+import Grid from '@material-ui/core/Grid';
 
 import {
   BrowserRouter as Router,
@@ -18,43 +21,30 @@ import {
 
 
 class App extends Component {
-  state = {
-    diffData: []
-  }
-
-  componentDidMount() {
-    this.setState({
-      diffData: [
-      {
-        datasets: [
-          {
-            label: "Rating",
-            data: [
-              1000,
-              1250
-            ],
-            backgroundColor: [
-              'rgba(127, 191, 63, 0.6)',
-              'rgba(54, 162, 235, 0.6)'
-              //'rgba(255, 206, 86, 0.6)'
-            ]
-          }
-        ]
-      }
-    ]
-
-    });
-  }
 
   render() {
     return (
+
       <div className="App">
         <header className="App-header">
+        <Link to="/company"><button>company page</button></Link>
+        <Link to="/review"><button>review page</button></Link>
 
           <div className="App-cover">
             <img src={myLogo} className="App-logo" alt="logo" width="470px" height="150"/>
-            <p>description</p>
-          </div>
+            <Grid container spacing={24} className="spacing">
+                    
+            </Grid>
+            <Grid container spacing={24}>
+              <Grid item xs>
+              </Grid>
+              <Grid item xs={6}>
+                <p className="help">A transparent platform that answers women's hard-to-ask questions about pay, treatment, and diversity in the workplace. By factoring financial satisfaction and gender equality measures, Femploy.me helps you find the right job for you.</p>
+              </Grid>
+              <Grid item xs>
+              </Grid>
+            </Grid>
+                      </div>
         </header>
         <div className="App-topCompanies">
           <div className="myText">
@@ -64,19 +54,13 @@ class App extends Component {
         <CompanyGrid>
         </CompanyGrid>
 
-
-
-        <div className="App-charts">
-          <ChartGrid>
-          </ChartGrid>
-        </div>
-
-
+        {/*
         <div className ="App-diff"> 
           {this.state.diffData.map(thing => {
             return <Difference diffData={thing}/>
           } ) }
         </div>
+      */}
 
       </div>
     );

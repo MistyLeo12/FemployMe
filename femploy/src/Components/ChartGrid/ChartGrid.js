@@ -10,7 +10,7 @@ class ChartGrid extends Component {
 	}
 
 	componentDidMount() {
-		// call API
+		// CALL API, PROMISE
 		this.setState({
 			chartData: [
 			{
